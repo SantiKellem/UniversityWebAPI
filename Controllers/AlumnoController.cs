@@ -6,7 +6,7 @@ using DTOs;
 namespace Controllers
 {
     [ApiController]
-    [Route("api/alumno")]
+    [Route("alumnos")]
     public class AlumnoController : ControllerBase
     {
         private readonly AlumnoService alumnoService;

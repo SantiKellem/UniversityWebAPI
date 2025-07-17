@@ -17,14 +17,12 @@ namespace Domain.Services
 
         public Alumno createAlumno(AlumnoDTO alumno)
         {
-            var newAlumno = new Alumno
-            {
-                Id = Alumno.ObtenerProximoId(),
-                Nombre = alumno.Nombre,
-                Apellido = alumno.Apellido,
-                Legajo = alumno.Legajo,
-                Direccion = alumno.Direccion
-            };
+            var newAlumno = new Alumno(
+                alumno.Nombre, 
+                alumno.Apellido, 
+                alumno.Legajo, 
+                alumno.Direccion
+            );
 
             Alumno.Lista.Add(newAlumno);
             return newAlumno;
