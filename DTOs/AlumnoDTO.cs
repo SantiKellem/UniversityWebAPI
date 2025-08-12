@@ -4,6 +4,7 @@ namespace DTOs
 {
     public class AlumnoDTO
     {
+        public int Id { get; set; }
         [Required]
         public string Apellido { get; set; }
 
